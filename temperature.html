@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Template">
+    <meta name="keywords" content="Template">
+    <meta name="format-detection" content="telephone=no">
+    <link href="./styles/main.css" rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="hidden-svg" id="hidden-svg" data-path="./images/sprite.svg"></div>
+    <div class="container">
+      <header class="header"> 
+        <div class="header__top"> 
+          <ul>
+            <li class="active"> <a href="./index.html">Сегодня </a></li>
+            <li> <a href="./5_days.html">5 дней</a></li>
+            <li> <a href="./weather_history.html">История погоды</a></li>
+          </ul>
+        </div>
+        <div class="header__bottom">
+          <p>Загрязнение воздуха: 8.16836305261858е-8</p>
+          <input type="search" placeholder="Поиск"/>
+        </div>
+      </header>
+      <div class="weather">
+        <div class="weather-data">
+          <div class="weather-data__degrees">
+            <ul>
+              <li>Ижевск, Россия</li>
+              <li>среда</li>
+              <li>облачно</li>
+            </ul>
+            <figure><img src="./images/sunny-weather.png" alt="icon-image">
+              <figcaption>22&deg;С</figcaption>
+            </figure>
+          </div>
+          <div class="weather-data__options">
+            <ul>
+              <li>Вероятность осадков: 20&#37;</li>
+              <li>Влажность: 45&#37;</li>
+              <li>Ветер: 11км/ч</li>
+            </ul>
+            <ul>
+              <li class="active"> <a href="./temperature.html">Температура</a></li>
+              <li><a href="./index.html">Вероятность осадков</a></li>
+              <li> <a href="./wind.html">Ветер</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="diagram-temperature">
+          <div class="diagram-temperature__item"><span>14</span></div>
+          <div class="diagram-temperature__item"><span>14</span></div>
+          <div class="diagram-temperature__item"><span>14</span></div>
+          <div class="diagram-temperature__item"><span>12</span></div>
+          <div class="diagram-temperature__item"><span>11</span></div>
+          <div class="diagram-temperature__item"><span>13</span></div>
+          <div class="diagram-temperature__item"><span>14</span></div>
+          <div class="diagram-temperature__item"><span>14</span></div>
+        </div>
+        <div class="diagram-wrapper__time">
+          <div class="diagram__time">17:00</div>
+          <div class="diagram__time">20:00</div>
+          <div class="diagram__time">23:00</div>
+          <div class="diagram__time">2:00</div>
+          <div class="diagram__time">5:00</div>
+          <div class="diagram__time">8:00</div>
+          <div class="diagram__time">11:00</div>
+          <div class="diagram__time">14:00</div>
+        </div>
+        <div class="weather-week">
+          <div class="weather-week__item active">
+            <p>ср</p><img src="./images/thunderstorms.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>22&deg;</span> 13&deg;</p>
+          </div>
+          <div class="weather-week__item">
+            <p>чт</p><img src="./images/rain_s_cloudy.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>21&deg;</span> 11&deg;</p>
+          </div>
+          <div class="weather-week__item">
+            <p>пт</p><img src="./images/partly_cloudy.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>24&deg;</span> 12&deg;</p>
+          </div>
+          <div class="weather-week__item">
+            <p>сб</p><img src="./images/thunderstorms.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>26&deg;</span> 13&deg;</p>
+          </div>
+          <div class="weather-week__item">
+            <p>вс</p><img src="./images/partly_cloudy.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>27&deg;</span> 14&deg;</p>
+          </div>
+          <div class="weather-week__item">
+            <p>пн</p><img src="./images/rain_s_cloudy.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>28&deg;</span> 14&deg;</p>
+          </div>
+          <div class="weather-week__item">
+            <p>вт</p><img src="./images/partly_cloudy.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>28&deg;</span> 14&deg;</p>
+          </div>
+          <div class="weather-week__item">
+            <p>ср</p><img src="./images/partly_cloudy.png" alt="icon-weather" width="48px" height="48px">
+            <p><span>28&deg;</span> 14&deg;</p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer"> 
+        <div class="footer__copy"> <span>2018 &copy; Copyright</span></div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -23,11 +23,14 @@
         </div>
         <div class="header__bottom">
           <p>Загрязнение воздуха: 8.16836305261858е-8</p>
-          <input type="search" placeholder="Поиск"/>
+          <form class="ver-alignment">
+            <input type="search" id="search" placeholder="Поиск"/>
+            <label class="ver-alignment" for="search">&nbsp;</label>
+          </form>
         </div>
       </header>
-      <div class="weather">
-        <div class="weather-data">
+      <main class="weather">
+        <section class="weather-data">
           <div class="weather-data__degrees">
             <ul>
               <li>Ижевск, Россия</li>
@@ -45,12 +48,12 @@
               <li>Ветер: 11км/ч</li>
             </ul>
             <ul>
-              <li> <a href="./temperature.html">Температура</a></li>
-              <li class="active"> <a href="./index.html">Вероятность осадков</a></li>
-              <li> <a href="./wind.html">Ветер</a></li>
+              <li> <a class="hor-alignment" href="./temperature.html">Температура</a></li>
+              <li class="active"> <a class="hor-alignment" href="./index.html">Вероятность осадков</a></li>
+              <li> <a class="hor-alignment" href="./wind.html">Ветер</a></li>
             </ul>
           </div>
-        </div>
+        </section>
         <div class="diagram">
           <div class="diagram__block">
             <div class="diagram__item">
@@ -117,7 +120,7 @@
             <div class="diagram__time">14:00</div>
           </div>
         </div>
-        <div class="weather-week">
+        <section class="weather-week">
           <div class="weather-week__item active">
             <p>ср</p><img src="./images/thunderstorms.png" alt="icon-weather" width="48px" height="48px">
             <p><span>22&deg;</span> 13&deg;</p>
@@ -150,10 +153,10 @@
             <p>ср</p><img src="./images/partly_cloudy.png" alt="icon-weather" width="48px" height="48px">
             <p><span>28&deg;</span> 14&deg;</p>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
       <footer class="footer"> 
-        <div class="footer__copy"> <span>2018 &copy; Copyright</span></div>
+        <div class="footer__copy hor-alignment"><span>2018 &copy; Copyright</span></div>
       </footer>
     </div>
   </body>

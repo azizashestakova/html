@@ -14,14 +14,14 @@
     <div class="hidden-svg" id="hidden-svg" data-path="./images/sprite.svg"></div>
     <div class="container">
       <header class="header"> 
-        <nav class="header__top"> 
+        <div class="header__menu">
           <ul>
             <li class="active"> <a href="./index.html">Сегодня </a></li>
             <li> <a href="./5_days.html">5 дней</a></li>
             <li> <a href="./weather_history.html">История погоды</a></li>
           </ul>
-        </nav>
-        <div class="header__bottom">
+        </div>
+        <div class="header__information">
           <p>Загрязнение воздуха: 8.16836305261858е-8</p>
           <form class="ver-alignment">
             <input type="search" id="search" placeholder="Поиск"/>
@@ -30,81 +30,83 @@
         </div>
       </header>
       <main class="weather-history">
-        <div class="weather-history__month">
-          <div class="weather-history__month-item"></div>
-          <div class="weather-history__month-item">Январь</div>
-          <div class="weather-history__month-item">Февраль</div>
-          <div class="weather-history__month-item">Март</div>
-          <div class="weather-history__month-item">Апрель</div>
-          <div class="weather-history__month-item">Май</div>
-          <div class="weather-history__month-item">Июнь</div>
-          <div class="weather-history__month-item">Июль</div>
-          <div class="weather-history__month-item">Август</div>
-          <div class="weather-history__month-item">Сентябрь</div>
-          <div class="weather-history__month-item">Октябрь</div>
-          <div class="weather-history__month-item">Ноябрь</div>
-          <div class="weather-history__month-item">Декабрь</div>
-        </div>
-        <div class="weather-history__midmax">
-          <div class="weather-history__midmax-item">Средний максимум</div>
-          <div class="weather-history__midmax-item">-9&deg;</div>
-          <div class="weather-history__midmax-item">-8&deg;</div>
-          <div class="weather-history__midmax-item">-1&deg;</div>
-          <div class="weather-history__midmax-item">7&deg;</div>
-          <div class="weather-history__midmax-item">18&deg;</div>
-          <div class="weather-history__midmax-item">23&deg;</div>
-          <div class="weather-history__midmax-item">25&deg;</div>
-          <div class="weather-history__midmax-item">22&deg;</div>
-          <div class="weather-history__midmax-item">15&deg;</div>
-          <div class="weather-history__midmax-item">7&deg;</div>
-          <div class="weather-history__midmax-item">-2&deg;</div>
-          <div class="weather-history__midmax-item">-7&deg;</div>
-        </div>
-        <div class="weather-history__midmin">
-          <div class="weather-history__midmin-item">Средний минимум</div>
-          <div class="weather-history__midmin-item">-16&deg;</div>
-          <div class="weather-history__midmin-item">-15&deg;</div>
-          <div class="weather-history__midmin-item">-9&deg;</div>
-          <div class="weather-history__midmin-item">-1&deg;</div>
-          <div class="weather-history__midmin-item">7&deg;</div>
-          <div class="weather-history__midmin-item">12&deg;</div>
-          <div class="weather-history__midmin-item">14&deg;</div>
-          <div class="weather-history__midmin-item">12&deg;</div>
-          <div class="weather-history__midmin-item">7&deg;</div>
-          <div class="weather-history__midmin-item">0&deg;</div>
-          <div class="weather-history__midmin-item">-7&deg;</div>
-          <div class="weather-history__midmin-item">-12&deg;</div>
-        </div>
-        <div class="weather-history__recmax">
-          <div class="weather-history__recmax-item">Рекордный максимум</div>
-          <div class="weather-history__recmax-item">3&deg;</div>
-          <div class="weather-history__recmax-item">3&deg;</div>
-          <div class="weather-history__recmax-item">9&deg;</div>
-          <div class="weather-history__recmax-item">24&deg;</div>
-          <div class="weather-history__recmax-item">30&deg;</div>
-          <div class="weather-history__recmax-item">36&deg;</div>
-          <div class="weather-history__recmax-item">38&deg;</div>
-          <div class="weather-history__recmax-item">37&deg;</div>
-          <div class="weather-history__recmax-item">30&deg;</div>
-          <div class="weather-history__recmax-item">22&deg;</div>
-          <div class="weather-history__recmax-item">12&deg;</div>
-          <div class="weather-history__recmax-item">4&deg;</div>
-        </div>
-        <div class="weather-history__recmin">
-          <div class="weather-history__recmin-item">Рекордный минимум</div>
-          <div class="weather-history__recmin-item">-39&deg;</div>
-          <div class="weather-history__recmin-item">-39&deg;</div>
-          <div class="weather-history__recmin-item">-30&deg;</div>
-          <div class="weather-history__recmin-item">-22&deg;</div>
-          <div class="weather-history__recmin-item">-7&deg;</div>
-          <div class="weather-history__recmin-item">0&deg;</div>
-          <div class="weather-history__recmin-item">4&deg;</div>
-          <div class="weather-history__recmin-item">1&deg;</div>
-          <div class="weather-history__recmin-item">-4&deg;</div>
-          <div class="weather-history__recmin-item">-21&deg;</div>
-          <div class="weather-history__recmin-item">-29&deg;</div>
-          <div class="weather-history__recmin-item">-40&deg;</div>
-        </div>
+        <table class="table-weather">
+          <tr>
+            <th class="table-weather__th">&nbsp;</th>
+            <th class="table-weather__th">Январь</th>
+            <th class="table-weather__th">Февраль</th>
+            <th class="table-weather__th">Март</th>
+            <th class="table-weather__th">Апрель</th>
+            <th class="table-weather__th">Май</th>
+            <th class="table-weather__th">Июнь</th>
+            <th class="table-weather__th">Июль</th>
+            <th class="table-weather__th">Август</th>
+            <th class="table-weather__th">Сентябрь</th>
+            <th class="table-weather__th">Октябрь</th>
+            <th class="table-weather__th">Ноябрь</th>
+            <th class="table-weather__th">Декабрь</th>
+          </tr>
+          <tr>
+            <td class="table-weather__td">Средний минимум</td>
+            <td class="table-weather__td">-16&deg;</td>
+            <td class="table-weather__td">-15&deg;</td>
+            <td class="table-weather__td">-9&deg;</td>
+            <td class="table-weather__td">-1&deg;</td>
+            <td class="table-weather__td">7&deg;</td>
+            <td class="table-weather__td">13&deg;</td>
+            <td class="table-weather__td">14&deg;</td>
+            <td class="table-weather__td">12&deg;</td>
+            <td class="table-weather__td">7&deg;</td>
+            <td class="table-weather__td">0&deg;</td>
+            <td class="table-weather__td">-7&deg;</td>
+            <td class="table-weather__td">-12&deg;</td>
+          </tr>
+          <tr>
+            <td class="table-weather__td">Рекордный максимум</td>
+            <td class="table-weather__td">3&deg;</td>
+            <td class="table-weather__td">3&deg;</td>
+            <td class="table-weather__td">9&deg;</td>
+            <td class="table-weather__td">24&deg;</td>
+            <td class="table-weather__td">30&deg;</td>
+            <td class="table-weather__td">36&deg;</td>
+            <td class="table-weather__td">38&deg;</td>
+            <td class="table-weather__td">37&deg;</td>
+            <td class="table-weather__td">30&deg;</td>
+            <td class="table-weather__td">22&deg;</td>
+            <td class="table-weather__td">12&deg;</td>
+            <td class="table-weather__td">4&deg;</td>
+          </tr>
+          <tr>
+            <td class="table-weather__td">Средний максимум</td>
+            <td class="table-weather__td">-9&deg;</td>
+            <td class="table-weather__td">-8&deg;</td>
+            <td class="table-weather__td">-1&deg;</td>
+            <td class="table-weather__td">7&deg;</td>
+            <td class="table-weather__td">18&deg;</td>
+            <td class="table-weather__td">23&deg;</td>
+            <td class="table-weather__td">25&deg;</td>
+            <td class="table-weather__td">22&deg;</td>
+            <td class="table-weather__td">15&deg;</td>
+            <td class="table-weather__td">7&deg;</td>
+            <td class="table-weather__td">-2&deg;</td>
+            <td class="table-weather__td">-7&deg;</td>
+          </tr>
+          <tr>
+            <td class="table-weather__td">Рекордный минимум</td>
+            <td class="table-weather__td">-39&deg;</td>
+            <td class="table-weather__td">-39&deg;</td>
+            <td class="table-weather__td">-30&deg;</td>
+            <td class="table-weather__td">-22&deg;</td>
+            <td class="table-weather__td">-7&deg;</td>
+            <td class="table-weather__td">0&deg;</td>
+            <td class="table-weather__td">4&deg;</td>
+            <td class="table-weather__td">1&deg;</td>
+            <td class="table-weather__td">-4&deg;</td>
+            <td class="table-weather__td">-21&deg;</td>
+            <td class="table-weather__td">-29&deg;</td>
+            <td class="table-weather__td">-4&deg;</td>
+          </tr>
+        </table>
       </main>
       <footer class="footer"> 
         <div class="footer__copy hor-alignment"><span>2018 &copy; Copyright</span></div>

@@ -14,14 +14,14 @@
     <div class="hidden-svg" id="hidden-svg" data-path="./images/sprite.svg"></div>
     <div class="container">
       <header class="header"> 
-        <nav class="header__top"> 
+        <div class="header__menu">
           <ul>
             <li class="active"> <a href="./index.html">Сегодня </a></li>
             <li> <a href="./5_days.html">5 дней</a></li>
             <li> <a href="./weather_history.html">История погоды</a></li>
           </ul>
-        </nav>
-        <div class="header__bottom">
+        </div>
+        <div class="header__information">
           <p>Загрязнение воздуха: 8.16836305261858е-8</p>
           <form class="ver-alignment">
             <input type="search" id="search" placeholder="Поиск"/>
@@ -212,23 +212,23 @@
         <section class="sun-moon-block hor-alignment">
           <div class="sun-moon-block__item">
             <div class="sun-moon-block__sun"><img src="./images/icon-sun.png" alt="icon-sun">
-              <div class="sun-moon-block__params">
-                <p>Долгота дня &ndash; 16ч 43мин</p>
-                <p>Восход &ndash; 4:02</p>
-                <p>Заход &ndash; 20:45</p>
-              </div>
+              <ul class="sun-moon-block__params">
+                <li>Долгота дня &ndash; 16ч 43мин</li>
+                <li>Восход &ndash; 4:02</li>
+                <li>Заход &ndash; 20:45</li>
+              </ul>
             </div>
-            <div class="sun-moon-block__text">Сегодня день на 2 минуты длиннее, чем вчера</div>
+            <p class="sun-moon-block__text">Сегодня день на 2 минуты длиннее, чем вчера</p>
           </div>
           <div class="sun-moon-block__item">
             <div class="sun-moon-block__moon"><img src="./images/icon-moon.png" alt="icon-moon">
-              <div class="sun-moon-block__params">
-                <p>Луна растущая &ndash; 19&#37;</p>
-                <p>Восход &ndash; 7:40</p>
-                <p>Заход &ndash; 10:58</p>
-              </div>
+              <ul class="sun-moon-block__params">
+                <li>Луна растущая &ndash; 19&#37;</li>
+                <li>Восход &ndash; 7:40</li>
+                <li>Заход &ndash; 10:58</li>
+              </ul>
             </div>
-            <div class="sun-moon-block__text">Полнолуние &ndash; 28 июня, через 23 дня</div>
+            <p class="sun-moon-block__text">Полнолуние &ndash; 28 июня, через 23 дня</p>
           </div>
         </section>
       </main>

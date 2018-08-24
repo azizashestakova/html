@@ -1,5 +1,5 @@
 function chessBoard(width, height) {
-    var hash;
+    var hash = ' ';
     var space = ' ';
     for (var i = 0; i < height; i++) {        
         hash += '\n';

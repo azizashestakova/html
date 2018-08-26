@@ -17,3 +17,5 @@ function makeArray(start, end, step) {
 console.log(makeArray(1, 10));
 console.log(makeArray(1, 10, 3));
 console.log(makeArray(10, 1, 2));
+
+

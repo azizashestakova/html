@@ -3,6 +3,9 @@
     "browser": true
     },
     "extends": "eslint:recommended",
+    "rules": {
+        "no-console": "off",
+    },
     "parserOptions": {
     "ecmaVersion": 2017
     },

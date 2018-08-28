@@ -4,7 +4,7 @@
     },
     "extends": "eslint:recommended",
     "rules": {
-        "no-console": "off",
+        "no-console": "off"
     },
     "parserOptions": {
     "ecmaVersion": 2017

@@ -1,4 +1,4 @@
-function deepCompare(object1, object2) {
+function returnDeepCompare(object1, object2) {
     var count1 = 0,
         count2 = 0;
 	for (var key in object1) {
@@ -20,10 +20,10 @@ function deepCompare(object1, object2) {
 	return true;
 }
 
-console.log (deepCompare ( {one:1, two:`2`} , {one:1, two: `2`}));
+console.log (returnDeepCompare ( {one:1, two:`2`} , {one:1, two: `2`}));
 
-console.log (deepCompare ({one:1, two:`2`} , { two: 2}));
+console.log (returnDeepCompare ({one:1, two:`2`} , { two: 2}));
 
-console.log (deepCompare ({one:1, two:`2`} , { one:1, two: 2}));
+console.log (returnDeepCompare ({one:1, two:`2`} , { one:1, two: 2}));
 
-console.log (deepCompare ( {one:1, two:`2`} , { two: `2`, one:1 }));
+console.log (returnDeepCompare ( {one:1, two:`2`} , { two: `2`, one:1 }));

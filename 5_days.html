@@ -31,8 +31,8 @@
         </header>
         <main class="five-days-wrapper">
           <section class="five-days">
-            <div class="five-days__weather">
-              <div class="five-days__weather__item">
+            <div class="five-days__weather switch" id="fiveDaysContainer">
+              <div class="five-days__weather__item temperature-daytime active">
                 <div class="five-days__weather__item__date">Пт, 20 мая</div>
                 <div class="five-days__weather__item__card">
                   <div class="five-days__weather__item__card-item"><span>Ночь</span><img src="./images/icon-cloudy.png" alt="icon-weather">
@@ -49,8 +49,25 @@
                   </div>
                 </div>
               </div>
-              <div class="five-days__weather__item">
-                <div class="five-days__weather__item__date">Пт, 20 мая</div>
+              <div class="five-days__weather__item temperature-daytime">
+                <div class="five-days__weather__item__date">Сб, 21 мая</div>
+                <div class="five-days__weather__item__card">
+                  <div class="five-days__weather__item__card-item"><span>Ночь</span><img src="./images/icon-cloudy.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+8</div>
+                  </div>
+                  <div class="five-days__weather__item__card-item"><span>Утро</span><img src="./images/icon-rain.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+6</div>
+                  </div>
+                  <div class="five-days__weather__item__card-item"><span>День</span><img src="./images/icon-rain-wind.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+2</div>
+                  </div>
+                  <div class="five-days__weather__item__card-item"><span>Вечер</span><img src="./images/icon-sunny.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+4</div>
+                  </div>
+                </div>
+              </div>
+              <div class="five-days__weather__item temperature-daytime">
+                <div class="five-days__weather__item__date">Вс, 22 мая</div>
                 <div class="five-days__weather__item__card">
                   <div class="five-days__weather__item__card-item"><span>Ночь</span><img src="./images/icon-cloudy.png" alt="icon-weather">
                     <div class="five-days__weather__item__card-item__degrees">+8</div>
@@ -60,17 +77,34 @@
                   </div>
                   <div class="five-days__weather__item__card-item"><span>День</span><img src="./images/icon-rain-wind.png" alt="icon-weather">
                     <div class="five-days__weather__item__card-item__degrees">+21</div>
+                  </div>
+                  <div class="five-days__weather__item__card-item"><span>Вечер</span><img src="./images/icon-sunny.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+22</div>
+                  </div>
+                </div>
+              </div>
+              <div class="five-days__weather__item temperature-daytime">
+                <div class="five-days__weather__item__date">Пн, 23 мая</div>
+                <div class="five-days__weather__item__card">
+                  <div class="five-days__weather__item__card-item"><span>Ночь</span><img src="./images/icon-cloudy.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+20</div>
+                  </div>
+                  <div class="five-days__weather__item__card-item"><span>Утро</span><img src="./images/icon-rain.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+19</div>
+                  </div>
+                  <div class="five-days__weather__item__card-item"><span>День</span><img src="./images/icon-rain-wind.png" alt="icon-weather">
+                    <div class="five-days__weather__item__card-item__degrees">+22</div>
                   </div>
                   <div class="five-days__weather__item__card-item"><span>Вечер</span><img src="./images/icon-sunny.png" alt="icon-weather">
                     <div class="five-days__weather__item__card-item__degrees">+17</div>
                   </div>
                 </div>
               </div>
-              <div class="five-days__weather__item">
-                <div class="five-days__weather__item__date">Пт, 20 мая</div>
+              <div class="five-days__weather__item temperature-daytime">
+                <div class="five-days__weather__item__date">Вт, 24 мая</div>
                 <div class="five-days__weather__item__card">
                   <div class="five-days__weather__item__card-item"><span>Ночь</span><img src="./images/icon-cloudy.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+8</div>
+                    <div class="five-days__weather__item__card-item__degrees">+18</div>
                   </div>
                   <div class="five-days__weather__item__card-item"><span>Утро</span><img src="./images/icon-rain.png" alt="icon-weather">
                     <div class="five-days__weather__item__card-item__degrees">+16</div>
@@ -79,43 +113,16 @@
                     <div class="five-days__weather__item__card-item__degrees">+21</div>
                   </div>
                   <div class="five-days__weather__item__card-item"><span>Вечер</span><img src="./images/icon-sunny.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+17</div>
+                    <div class="five-days__weather__item__card-item__degrees">+15</div>
                   </div>
                 </div>
-              </div>
-              <div class="five-days__weather__item">
-                <div class="five-days__weather__item__date">Пт, 20 мая</div>
-                <div class="five-days__weather__item__card">
-                  <div class="five-days__weather__item__card-item"><span>Ночь</span><img src="./images/icon-cloudy.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+8</div>
-                  </div>
-                  <div class="five-days__weather__item__card-item"><span>Утро</span><img src="./images/icon-rain.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+16</div>
-                  </div>
-                  <div class="five-days__weather__item__card-item"><span>День</span><img src="./images/icon-rain-wind.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+21</div>
-                  </div>
-                  <div class="five-days__weather__item__card-item"><span>Вечер</span><img src="./images/icon-sunny.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+17</div>
-                  </div>
-                </div>
-              </div>
-              <div class="five-days__weather__item">
-                <div class="five-days__weather__item__date">Пт, 21 мая</div>
-                <div class="five-days__weather__item__card">
-                  <div class="five-days__weather__item__card-item"><span>Ночь</span><img src="./images/icon-cloudy.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+8</div>
-                  </div>
-                  <div class="five-days__weather__item__card-item"><span>Утро</span><img src="./images/icon-rain.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+16</div>
-                  </div>
-                  <div class="five-days__weather__item__card-item"><span>День</span><img src="./images/icon-rain-wind.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+21</div>
-                  </div>
-                  <div class="five-days__weather__item__card-item"><span>Вечер</span><img src="./images/icon-sunny.png" alt="icon-weather">
-                    <div class="five-days__weather__item__card-item__degrees">+17</div>
-                  </div>
-                </div>
+              </div><img class="prev" src="./images/arrow.png" alt=""><img class="next" src="./images/arrow.png" alt="">
+              <div class="tabs">
+                <div class="tab tabact" data-id="1">Пт</div>
+                <div class="tab" data-id="2">Сб</div>
+                <div class="tab" data-id="3">Вс</div>
+                <div class="tab" data-id="4">Пн</div>
+                <div class="tab" data-id="5">Вт</div>
               </div>
             </div>
             <div class="wind-speed__wrapper">

@@ -29,7 +29,7 @@
             </form>
           </div>
         </header>
-        <main class="weather">
+        <main class="weather" id="weatherTabs">
           <section class="weather-data">
             <div class="weather-data__degrees">
               <ul>
@@ -48,76 +48,116 @@
                 <li>Ветер: 11км/ч</li>
               </ul>
               <ul>
-                <li> <a href="./temperature.html">Температура</a></li>
-                <li class="active"> <a href="./index.html">Вероятность осадков</a></li>
-                <li> <a href="./wind.html">Ветер</a></li>
+                <li><a class="knob" href="#" data-id2="1">Температура</a></li>
+                <li><a class="knob" href="#" data-id2="2">Вероятность осадков</a></li>
+                <li><a class="knob active" href="#" data-id2="3"> Ветер</a></li>
               </ul>
             </div>
           </section>
-          <div class="diagram">
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>24&#37;</span></div>
-                <div class="diagram__item-hour"></div>
+          <div class="diagram-wrapper">
+            <div class="diagram-wind">
+              <div class="diagram-wind__units"><span>7м/с</span><span>5м/с</span><span>5м/с</span><span>5м/с</span><span>6м/с</span><span>6м/с</span><span>6м/с</span><span>5м/с</span></div>
+              <div class="diagram-wind__direction"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"><img src="./images/wind_unselected.png" alt="icon-direction" width="40px" height="30px"></div>
+              <div class="diagram-wind__time">
+                <div class="diagram__time">17:00</div>
+                <div class="diagram__time">20:00</div>
+                <div class="diagram__time">23:00</div>
+                <div class="diagram__time">2:00</div>
+                <div class="diagram__time">5:00</div>
+                <div class="diagram__time">8:00</div>
+                <div class="diagram__time">11:00</div>
+                <div class="diagram__time">14:00</div>
               </div>
+            </div>
+          </div>
+          <div class="diagram-wrapper">
+            <div class="diagram-temperature">
+              <div class="diagram-temperature__item"><span>14</span></div>
+              <div class="diagram-temperature__item"><span>14</span></div>
+              <div class="diagram-temperature__item"><span>14</span></div>
+              <div class="diagram-temperature__item"><span>12</span></div>
+              <div class="diagram-temperature__item"><span>11</span></div>
+              <div class="diagram-temperature__item"><span>13</span></div>
+              <div class="diagram-temperature__item"><span>14</span></div>
+              <div class="diagram-temperature__item"><span>14</span></div>
+            </div>
+            <div class="diagram-wrapper__time">
               <div class="diagram__time">17:00</div>
-            </div>
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>30&#37;</span></div>
-                <div class="diagram__item-hour"></div>
-              </div>
               <div class="diagram__time">20:00</div>
-            </div>
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>24&#37;</span></div>
-                <div class="diagram__item-hour"></div>
-              </div>
               <div class="diagram__time">23:00</div>
-            </div>
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>8&#37;</span></div>
-                <div class="diagram__item-hour"></div>
-              </div>
               <div class="diagram__time">2:00</div>
-            </div>
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>4&#37;</span></div>
-                <div class="diagram__item-hour"></div>
-              </div>
               <div class="diagram__time">5:00</div>
-            </div>
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>6&#37;</span></div>
-                <div class="diagram__item-hour"></div>
-              </div>
               <div class="diagram__time">8:00</div>
-            </div>
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>0&#37;</span></div>
-                <div class="diagram__item-hour"></div>
-              </div>
               <div class="diagram__time">11:00</div>
-            </div>
-            <div class="diagram__block">
-              <div class="diagram__item">
-                <div class="diagram__item-hour"></div>
-                <div class="diagram__item-hour"><span>1&#37;</span></div>
-                <div class="diagram__item-hour"></div>
-              </div>
               <div class="diagram__time">14:00</div>
+            </div>
+          </div>
+          <div class="diagram-wrapper active">
+            <div class="diagram">
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>24&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">17:00</div>
+              </div>
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>30&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">20:00</div>
+              </div>
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>24&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">23:00</div>
+              </div>
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>8&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">2:00</div>
+              </div>
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>4&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">5:00</div>
+              </div>
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>6&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">8:00</div>
+              </div>
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>0&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">11:00</div>
+              </div>
+              <div class="diagram__block">
+                <div class="diagram__item">
+                  <div class="diagram__item-hour"></div>
+                  <div class="diagram__item-hour"><span>1&#37;</span></div>
+                  <div class="diagram__item-hour"></div>
+                </div>
+                <div class="diagram__time">14:00</div>
+              </div>
             </div>
           </div>
           <section class="weather-week">
